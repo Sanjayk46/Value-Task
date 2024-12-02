@@ -27,7 +27,7 @@
 </head>
 <body>
   <div class="blue-container">
-    <div class="circle"></div>
+    <div class="circle" id="circle"></div>
   </div>
   <div style=" padding-top: 10px;">
     <button onclick="changeColor('red')">Red</button>
@@ -37,6 +37,7 @@
   <div style="padding-top: 20px;">
     <input type="text" id="colorInput" placeholder="Enter the color">
   </div>
+  <button onclick="applybutton()">Apply</button>
   <script>
     function changeColor(color) {
       const circle = document.getElementById('circle');
@@ -44,11 +45,11 @@
     }
 
     // Function to change the color based on input
-    
+   function applybutton(){
       const colorInput = document.getElementById('colorInput').value;
       const circle = document.getElementById('circle');
       circle.style.backgroundColor = colorInput;
-    
+    }
   </script>
 </body>
 </html>
