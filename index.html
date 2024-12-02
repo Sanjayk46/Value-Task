@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Circle to Center</title>
+  <style>
+    .blue-container {
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      height: 300px;
+      width: 300px;
+      background-color: blue;
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      border-radius: 50%;
+    }
+    button{
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="blue-container">
+    <div class="circle"></div>
+  </div>
+  <div style=" padding-top: 10px;">
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <button onclick="changeColor('green')">Green</button>
+  </div>
+  <div style="padding-top: 20px;">
+    <input type="text" id="colorInput" placeholder="Enter the color">
+  </div>
+  <script>
+    function changeColor(color) {
+      const circle = document.getElementById('circle');
+      circle.style.backgroundColor = color;
+    }
+
+    // Function to change the color based on input
+    
+      const colorInput = document.getElementById('colorInput').value;
+      const circle = document.getElementById('circle');
+      circle.style.backgroundColor = colorInput;
+    
+  </script>
+</body>
+</html>
