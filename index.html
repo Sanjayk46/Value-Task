@@ -9,9 +9,9 @@
       display: flex;
       justify-content: center; 
       align-items: center; 
-      height: 300px;
-      width: 300px;
-      background-color: blue;
+      height: 250px;
+      width: 250px;
+      background-color: yellow;
     }
 
     .circle {
@@ -33,23 +33,26 @@
     <button onclick="changeColor('red')">Red</button>
     <button onclick="changeColor('blue')">Blue</button>
     <button onclick="changeColor('green')">Green</button>
+    <button onclick="resetColor('')">Reset</button>
   </div>
   <div style="padding-top: 20px;">
     <input type="text" id="colorInput" placeholder="Enter the color">
   </div>
-  <button onclick="applybutton()">Apply</button>
   <script>
+    const circle = document.getElementById('circle');
+    const input = document.querySelector("input");
+    const originalColor = circle.style.backgroundColor
     function changeColor(color) {
-      const circle = document.getElementById('circle');
+      
       circle.style.backgroundColor = color;
     }
-
-    // Function to change the color based on input
-   function applybutton(){
-      const colorInput = document.getElementById('colorInput').value;
-      const circle = document.getElementById('circle');
-      circle.style.backgroundColor = colorInput;
+    function resetColor(){
+      circle.style.backgroundColor = originalColor
     }
+    input.addEventListener("input",()=>{
+      circle.style.backgroundColor = input.value;
+    })
+
   </script>
 </body>
 </html>
