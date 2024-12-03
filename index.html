@@ -38,21 +38,10 @@
   <div style="padding-top: 20px;">
     <input type="text" id="colorInput" placeholder="Enter the color">
   </div>
-  <script>
-    const circle = document.getElementById('circle');
-    const input = document.querySelector("input");
-    const originalColor = circle.style.backgroundColor
-    function changeColor(color) {
-      
-      circle.style.backgroundColor = color;
-    }
-    function resetColor(){
-      circle.style.backgroundColor = originalColor
-    }
-    input.addEventListener("input",()=>{
-      circle.style.backgroundColor = input.value;
-    })
-
-  </script>
+  <h2>Tic Tac Toe game</h2>
+   <div class="board" id="board"></div>
+  <div class="status" id="status">Player X's Turn</div>
+  <button onclick="resetGame()">Restart Game</button>
+  <script src="index.js"></script>
 </body>
 </html>
