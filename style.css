@@ -1,4 +1,4 @@
-.blue-container {
+/* .blue-container {
       display: flex;
       justify-content: center; 
       align-items: center; 
@@ -16,7 +16,7 @@
     button{
       padding: 10px;
     }
-
+ */
 body {
   font-family: Arial, sans-serif;
   display: flex;
