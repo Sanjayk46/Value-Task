@@ -1,20 +1,20 @@
 // Circle color change functionality
-function changeColor(color) {
-  const circle = document.getElementById('circle');
-  circle.style.backgroundColor = color;
-}
+// function changeColor(color) {
+//   const circle = document.getElementById('circle');
+//   circle.style.backgroundColor = color;
+// }
 
-function resetColor() {
-  const circle = document.getElementById('circle');
-  circle.style.backgroundColor = ''; // Reset to original color
-}
+// function resetColor() {
+//   const circle = document.getElementById('circle');
+//   circle.style.backgroundColor = ''; // Reset to original color
+// }
 
-// Real-time color change based on input
-const circle = document.getElementById('circle');
-const input = document.getElementById('colorInput');
-input.addEventListener('input', () => {
-  circle.style.backgroundColor = input.value;
-});
+// // Real-time color change based on input
+// const circle = document.getElementById('circle');
+// const input = document.getElementById('colorInput');
+// input.addEventListener('input', () => {
+//   circle.style.backgroundColor = input.value;
+// });
 
 // Tic Tac Toe functionality
 const board = document.getElementById('board');
